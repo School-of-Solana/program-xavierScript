@@ -9,11 +9,17 @@ export default function WalletButton() {
   return (
     <div className="flex items-center gap-4">
       {publicKey && (
-        <div className="hidden sm:block text-sm text-gray-600">
-          {publicKey.toBase58().slice(0, 4)}...{publicKey.toBase58().slice(-4)}
+        <div className="hidden sm:flex items-center gap-2 text-sm text-zinc-700 px-3 py-1 rounded-full bg-white/60 border border-transparent">
+          <span className="font-mono text-xs text-zinc-500">
+            {publicKey.toBase58().slice(0, 6)}
+          </span>
+          <span className="text-xs text-zinc-400">•</span>
+          <span className="font-mono text-xs text-zinc-500">
+            {publicKey.toBase58().slice(-6)}
+          </span>
         </div>
       )}
-      <WalletMultiButton className="!bg-purple-600 hover:!bg-purple-700" />
+      <WalletMultiButton className="wallet-adapter-button btn-primary shadow-md hover:shadow-lg transition-all" />
     </div>
   );
 }

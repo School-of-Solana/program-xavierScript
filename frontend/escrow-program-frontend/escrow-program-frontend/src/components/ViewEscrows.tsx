@@ -104,7 +104,7 @@ export default function ViewEscrows() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
+    <div className="card rounded-lg shadow-md p-6 animate-fade-up">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Active Escrows</h2>
         <button
@@ -147,7 +147,7 @@ export default function ViewEscrows() {
           {escrows.map((escrow) => (
             <div
               key={escrow.publicKey.toBase58()}
-              className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              className="border rounded-lg p-4 hover:shadow-lg transition-shadow bg-white/60"
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
                 <div>

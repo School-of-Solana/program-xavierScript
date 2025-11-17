@@ -57,7 +57,7 @@ export default function MakeEscrow() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md p-6">
+    <div className="card rounded-lg shadow-md p-6 animate-fade-up">
       <h2 className="text-2xl font-bold mb-4">Create Escrow</h2>
 
       <form onSubmit={handleSubmit} className="space-y-4">
@@ -137,7 +137,7 @@ export default function MakeEscrow() {
         <button
           type="submit"
           disabled={!publicKey || loading}
-          className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-colors"
+          className="w-full btn-primary py-2 px-4 rounded-full disabled:bg-gray-400 disabled:cursor-not-allowed transition-all shadow-sm hover:shadow-md"
         >
           {loading ? "Creating Escrow..." : "Create Escrow"}
         </button>
