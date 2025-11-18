@@ -115,4 +115,4 @@ anchor test
 
 ## Flowchart
 
-![Escrow Flowchart](./flowchart/escrow-flowchart.drawio.png "Escrow dApp Flowchart: make, take, refund")
+![Escrow Flowchart](./flowchart/escrow-flowchart.png "Escrow dApp Flowchart: make, take, refund")
