@@ -115,4 +115,5 @@ anchor test
 
 ## Flowchart
 
-![Escrow Flowchart](./flowchart/escrow-flowchart.png "Escrow dApp Flowchart: make, take, refund")
+<img width="546" height="1181" alt="escrow-flowchart" src="https://github.com/user-attachments/assets/b831c810-215f-42b3-b907-16cb70bd2ccd" />
+
